@@ -5,31 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/dff8be2f02.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div id="header">
+
+    <!-- Header Code -->
+    <!-- <div id="header">
        <div class="container">
-        <nav>
-            <img src="images/logo.png" class="logo">
+            <nav>
+                <h2 id="brand-text"><span id="first-letter">T</span>amalika</h4>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a> </li>
+                    <li><a href="#about">About</a> </li>
+                    <li><a href="#services">Services</a> </li>
+                    <li><a href="#portfolio">Portfolio</a> </li>
+                    <li><a href="#contact">Contact</a> </li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi, I am <span> Tamalika Chowdhury</span><br> from West Bengal</h1>
+            </div>
+       </div>
+    </div> -->
+
+    <header>
+        <nav class="navbar bg-dark" data-bs-theme="dark">
+          <div class="container">
+            <a class="navbar-brand" href="#">
+                <h2 id="brand-text"><span id="first-letter">T</span>amalika</h4>
+            </a>
+
             <ul id="sidemenu">
                 <li><a href="#header">Home</a> </li>
                 <li><a href="#about">About</a> </li>
-                <li><a href="#services">Services</a> </li>
-                <li><a href="#portfolio">Portfolio</a> </li>
+                <li><a href="#portfolio">Projects</a> </li>
                 <li><a href="#contact">Contact</a> </li>
                 <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
 
             </ul>
             <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+          </div>
         </nav>
-        <div class="header-text">
-            <p>UI/UX Designer</p>
-            <h1>Hi, I am <span> Tamalika Chowdhury</span><br> from West Bengal</h1>
-        </div>
-       </div>
-    </div>
+    </header>
+
     <!-- --------------about-------- -->
     <div id="about">
         <div class="container">
@@ -43,23 +67,16 @@
 
                     <div class="tab-titles">
                       <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                      <p class="tab-links"  onclick="opentab('experience')">Experience</p>
                       <p class="tab-links"  onclick="opentab('education')">Education</p>
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
-                            <li><span>Web Development</span><br>Web App Development</li>
-                            <li><span>App Development</span><br>Building Android/ios apps</li>
+                            <li><span>Language</span><br>C, Java, Oracle11g, SQL</li>
+                            <li><span>Web Development</span><br>Html, Css, Javascript, Bootstrap</li>
+                            <li><span>Framework</span><br>Git</li>
                         </ul>
                     </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span></span><br></li>
-                            <li><span>Web Development</span><br>Web App Development</li>
-                            <li><span>App Development</span><br>Building Android/ios apps</li>
-                        </ul>
-                    </div>
+
                     <div class="tab-contents" id="education">
                         <ul>
                             <li><span>2020-present</span><br>B.Tech from Murshidabad College of Engineering and Technology</li>
@@ -71,63 +88,22 @@
             </div>
         </div>
     </div>
-    <!-- ---------------services----------- -->
-    <div id="services">
-        <div class="container">
-            <h1 class="sub-title">My Services</h1>
-            <div class="services-list">
-                <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Web Design</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque aut saepe tenetur?</p>
-                    <a href="#">Learn more</a>
-                </div>
-                <div>
-                    <i class="fa-regular fa-crop-simple"></i>
-                    <h2>UI/UX Design</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque aut saepe tenetur?</p>
-                    <a href="#">Learn more</a>
-                </div>
-                <div>
-                    <i class="fa-brands fa-app-store"></i>
-                    <h2>App Design</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque aut saepe tenetur?</p>
-                    <a href="#">Learn more</a>
-                </div>
-            </div>
-        </div>
-    </div>
+    
     <!-- ----------------portfolio---------------- -->
     <div id="portfolio">
         <div class="container">
-            <h1 class="sub-title">My Work</h1>
+            <h1 class="sub-title"> Projects</h1>
             <div class="work-list">
                 <div class="work">
-                    <img src="images/work-1.png">
+                    <img src="images/Number Converter Preview.jpeg">
                     <div class="layer">
-                        <h3>Social Media App</h3>
-                        <p>The app connects you to the talented people around the world. Download it from playstore.</p>
-                        <a href=""><i class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
+                        <h3>Number Converter Website</h3>
+                        <p>This website is used to convert number from one base system to another base system.</p>
+                        <a href="https://tamalika01.github.io/Number-Converter/" target="_blank><i class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
                     </div>
                 </div>
-                <div class="work">
-                    <img src="images/work-2.png">
-                    <div class="layer">
-                        <h3>Music App</h3>
-                        <p>The app connects you to the talented people around the world. Download it from playstore.</p>
-                        <a href=""><i class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/work-3.png">
-                    <div class="layer">
-                        <h3>Online Shopping App</h3>
-                        <p>The app connects you to the talented people around the world. Download it from playstore.</p>
-                        <a href=""><i class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
-                    </div>
                 </div>
             </div>
-            <a href="#" class="btn">See more</a>
         </div>
     </div>
     <!-- -------------------contact-------------------- -->
@@ -143,7 +119,7 @@
                         <a href=""><i class="fa-brands fa-facebook"></i></a>
                         <a href=""><i class="fa-brands fa-github"></i></a>
                      </div>
-                     <a href="images/my-cv.pdf" download class="btn btn2">Download Resume</a>
+                     <a href="images/Tamalika's Resume (9).pdf" download class="btn btn2">Download Resume</a>
                 </div>
                 <div class="contact-right">
                     <form name="submit-to-google-sheet">
@@ -152,7 +128,7 @@
                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                        <button type="submit" class="btn btn2">Submit</button>
                     </form>
-                    <span id="msg">hello</span>
+                    <span id="msg"></span>
                 </div>
             </div>
         </div>
@@ -160,6 +136,7 @@
             <p>Copyright @ Tamalika <i class="fa-solid fa-heart"></i></p>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script>
         var tablinks = document.getElementsByClassName("tab-links");
         var tabcontents = document.getElementsByClassName("tab-contents");
@@ -185,10 +162,7 @@
        }
 
     </script>
-    <form name="submit-to-google-sheet">
-        <input name="email" type="email" placeholder="Email" required>
-        <button type="submit">Send</button>
-      </form>
+    
       
       <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbxsERMhcQ5rBdsKK6deopA61X-fnUQopSxcOyfEu5Serzl-LByWSlwcFqPKx9W1k9hE/exec'

@@ -1,20 +1,26 @@
+/* Generic Styles */
 *{
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
+
 html{
     scroll-behavior: smooth;
 }
+
 body{
     background-color: black;
     color: white;
 }
+
+/* Styles for header */
+
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(images/saree.jpeg);
+    /* background-image: url(images/saree.jpeg); */
     background-size: contain;
     background-position: right;
     background-repeat: no-repeat;
@@ -66,6 +72,17 @@ nav ul li a:hover::after{
 .header-text h1 span{
     color: #ff004f;
 }
+
+#brand-text{
+    margin-left: 3%;
+    font-weight:900;
+    font-style: italic;
+}
+
+#first-letter{
+    color: #ff004f; 
+}
+
 /* ------------about------------ */
 #about{
     padding: 80px 0;
@@ -183,7 +200,8 @@ nav ul li a:hover::after{
     overflow: hidden;
 }
 .work img{
-    width: 100%;
+    width: 90%;
+    height: 70vh;
     border-radius: 10px;
     display: block;
     transition: transform 0.5s;
@@ -312,9 +330,7 @@ nav .fa-solid{
     display: none;
 }
 @media only screen and (max-width:600px){
-    #header{
-        background-image: url(images/saree.jpeg);
-    }
+
     .header-text{
         margin-top: 100%;
         font-size: 16px;
